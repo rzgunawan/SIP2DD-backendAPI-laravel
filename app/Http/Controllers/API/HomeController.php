@@ -108,6 +108,26 @@ class HomeController extends Controller
         ];
     }
 
+    public function highlightdetail(Request $request)
+    {
+        $highlight_id = $request->id;
+
+        if($highlight_id != null) {
+            return [
+                "title" => "Title 1",
+                "desc" => "This is description",
+                "thumbnail" => "www.google.com",
+                "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo massa, luctus et vestibulum id, semper eget est. Integer in nisi mi. Pellentesque quam tortor, lacinia et metus vitae, condimentum ultricies ante. Nam a convallis enim, et finibus mi. Vivamus id vulputate lacus, sed volutpat sem. Nam scelerisque feugiat vestibulum. Vestibulum cursus augue in felis consequat tempus. Duis cursus ac felis vitae molestie. Aliquam semper porta placerat. Aenean facilisis varius neque, et malesuada sem finibus vel. Nulla eget mollis augue. Fusce elementum nunc nec felis tempor elementum."  
+            ];
+        }
+        else{
+            return [
+                "message" => "Invalid"
+            ];
+        }
+        
+    }
+
      public function pojaknas()
     {
         return [
@@ -138,6 +158,24 @@ class HomeController extends Controller
             ],
             
         ];
+    }
+
+    public function pojaknasdetail(Request $request)
+    {
+        $pojaknas_id = $request->id;
+
+        if($pojaknas_id != null) {
+            return [
+                "title" => "Pojaknas 1",
+                "desc" => "This is description",
+                "thumbnail" => "www.google.com",
+                "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo massa, luctus et vestibulum id, semper eget est. Integer in nisi mi. Pellentesque quam tortor, lacinia et metus vitae, condimentum ultricies ante. Nam a convallis enim, et finibus mi. Vivamus id vulputate lacus, sed volutpat sem. Nam scelerisque feugiat vestibulum. Vestibulum cursus augue in felis consequat tempus. Duis cursus ac felis vitae molestie. Aliquam semper porta placerat. Aenean facilisis varius neque, et malesuada sem finibus vel. Nulla eget mollis augue. Fusce elementum nunc nec felis tempor elementum."  
+            ];
+        }else{
+            return [
+                "message" => "Invalid"
+            ];
+        }   
     }
 
     public function layanan()
@@ -172,6 +210,25 @@ class HomeController extends Controller
         ];
     }
 
+    public function layanandetail(Request $request)
+    {
+        $layanan_id = $request->id;
+
+        if($layanan_id != null) {
+            return [
+                "title" => "Layanan 1",
+                "desc" => "This is description",
+                "thumbnail" => "www.google.com",
+                "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo massa, luctus et vestibulum id, semper eget est. Integer in nisi mi. Pellentesque quam tortor, lacinia et metus vitae, condimentum ultricies ante. Nam a convallis enim, et finibus mi. Vivamus id vulputate lacus, sed volutpat sem. Nam scelerisque feugiat vestibulum. Vestibulum cursus augue in felis consequat tempus. Duis cursus ac felis vitae molestie. Aliquam semper porta placerat. Aenean facilisis varius neque, et malesuada sem finibus vel. Nulla eget mollis augue. Fusce elementum nunc nec felis tempor elementum."  
+            ];
+        }else{
+            return [
+                "message" => "Invalid"
+            ];
+        }
+       
+    }
+
     public function galeri()
     {
         return [
@@ -204,7 +261,7 @@ class HomeController extends Controller
         ];
     }
 
-    public function event()
+    public function kegiatan()
     {
         return [
             [
@@ -233,6 +290,16 @@ class HomeController extends Controller
                 "thumbnail" => "www.google.com"
             ],
             
+        ];
+    }
+
+    public function kegiatandetail(Request $request)
+    {
+        return [
+            "title" => "Layanan 1",
+            "desc" => "This is description",
+            "thumbnail" => "www.google.com",
+            "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo massa, luctus et vestibulum id, semper eget est. Integer in nisi mi. Pellentesque quam tortor, lacinia et metus vitae, condimentum ultricies ante. Nam a convallis enim, et finibus mi. Vivamus id vulputate lacus, sed volutpat sem. Nam scelerisque feugiat vestibulum. Vestibulum cursus augue in felis consequat tempus. Duis cursus ac felis vitae molestie. Aliquam semper porta placerat. Aenean facilisis varius neque, et malesuada sem finibus vel. Nulla eget mollis augue. Fusce elementum nunc nec felis tempor elementum."  
         ];
     }
 
